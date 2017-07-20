@@ -7,12 +7,15 @@ import (
 func main() {
 	fmt.Print("Hello,World\n")
 	var accessToken = ""
-	var opts  = ""
 
 	accessToken = "access_token"
 	client := weibo.NewClient(accessToken)
+	print(client.BaseURL.Host)
 
-	// Update a weibo
-	opts = &weibo.StatusRequest{Status: weibo.String("Hello, Weibo!")}
-	status, _, err := client.Statuses.Create(opts)
+	// list  weibo
+	opts := &weibo.StatusListOptions{}
+	status, _, err := client.Statuses.UserTimeline(opts)
+	fmt.Printf("Status is :\n",status)
+	fmt.Printf("Err is :\n",err)
+
 }
