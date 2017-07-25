@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"github.com/larrylv/go-weibo/weibo"
+	"UserSearchEngine/stackoverflow"
 )
 func main() {
 	fmt.Print("Hello,World\n")
@@ -17,5 +18,8 @@ func main() {
 	status, _, err := client.Statuses.UserTimeline(opts)
 	fmt.Printf("Status is :\n",status)
 	fmt.Printf("Err is :\n",err)
+
+	//test stackoverflow
+	answers()
 
 }
