@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 	"github.com/larrylv/go-weibo/weibo"
-	"UserSearchEngine/stackoverflow"
+	"user-search-engine/stackoverflow"
 )
 func main() {
 	fmt.Print("Hello,World\n")
@@ -19,7 +19,7 @@ func main() {
 	fmt.Printf("Status is :\n",status)
 	fmt.Printf("Err is :\n",err)
 
-	//test stackoverflow
-	answers()
+	//test stackoverflow stackoverflow.ge)tAnswers(
 
+	stackoverflow.GetAnswers()
 }
