@@ -18,8 +18,9 @@ func main() {
 	status, _, err := client.Statuses.UserTimeline(opts)
 	fmt.Printf("Status is :\n",status)
 	fmt.Printf("Err is :\n",err)
+	fmt.Print("\n")
 
 	//test stackoverflow stackoverflow.ge)tAnswers(
 
-	stackoverflow.GetAnswers()
+	stackoverflow.GetUsers()
 }
