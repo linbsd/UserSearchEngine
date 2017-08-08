@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 	"github.com/larrylv/go-weibo/weibo"
-	"user-search-engine/stackoverflow"
+	"user-search-engine/github"
 )
 func main() {
 	fmt.Print("Hello,World\n")
@@ -22,5 +22,5 @@ func main() {
 
 	//test stackoverflow stackoverflow.ge)tAnswers(
 
-	stackoverflow.GetUsers()
+	github.Users("linbsd")
 }
